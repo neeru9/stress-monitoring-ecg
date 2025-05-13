@@ -31,13 +31,23 @@ The ensemble model combines predictions from XGBoost, LSTM, and a Transformer-ba
 - XGBoost: Used for feature importance analysis and as a robust baseline
 - LSTM: Captures temporal dependencies in ECG signals
 - Transformer: Learns long-range dependencies with self-attention
+## Ensemble Method
+The ensemble model aggregates predictions from XGBoost, LSTM, and Transformer models. Weighted averaging is applied to combine the predictions, giving more importance to XGBoost due to its stable performance in stress detection. The weights were determined through cross-validation experiments to maximize accuracy and F1 score.
+
+The final prediction equation is given by:
+
+\\[
+y_{ensemble} = w_1 \, y_{xgboost} + w_2 \, y_{lstm} + w_3 \, y_{transformer}
+\\]
+
+Where \\(w_1 > w_2\\) and \\(w_1 > w_3\\), indicating XGBoost's higher influence.
 
 The final prediction is a weighted ensemble, giving more importance to XGBoost due to its stability.
 
 ### Model Performance Metrics
 The performance metrics (MSE, RMSE) of the individual models and the weighted ensemble on both training and testing sets are as follows:
 
-| Model            | MSE   | RMSE (Training) | RMSE (Testing) |
+| Model            | R²    | MSE (Training) | RME (Testing) |
 |-----------------|-------|----------------|---------------|
 | XGBoost          | 0.792 | 0.2084         | 0.4566        |
 | LSTM             | 0.802 | 0.1982         | 0.4471        |
