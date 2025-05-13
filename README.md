@@ -4,8 +4,6 @@
 - [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Data Pre-Processing](#data-pre-processing)
-- [Model and Training](#model-and-training)
-- [Cross Validation Results](#cross-validation-results)
 - [Results on Testing Set](#results-on-testing-set)
 - [Experimental Results](#experimental-results)
 - [Installation](#installation)
