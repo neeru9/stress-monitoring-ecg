@@ -62,7 +62,7 @@ Below are the results from specific test samples, showing the predicted stress l
 | 0.9     | 0.7          | 30     | 11       | 5.12 (High Stress)       |
 
 ## References
-<a id="1">[1]</a> PhysioNet Driver’s Stress Detection Dataset. Available at: <a href="https://physionet.org/content/drivedb/1.0.0/">https://physionet.org/content/drivedb/1.0.0/
+<a id="1">[1]</a> PhysioNet Driver’s Stress Detection Dataset. Available at: <a href="https://physionet.org/content/drivedb/1.0.0/">https://physionet.org/content/drivedb/1.0.0/ /br
 [2] A. L. Goldberger, L. A. N. Amaral, L. Glass, J. M. Hausdorff, P. Ch. Ivanov, R. G. Mark, J. E. Mietus, G. B. Moody, C.-K. Peng, and H. E. Stanley, "PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals," *Circulation*, vol. 101, no. 23, pp. e215–e220, Jun. 2000, doi: [10.1161/01.CIR.101.23.e215](https://doi.org/10.1161/01.CIR.101.23.e215). 
 </a>
 
