@@ -14,7 +14,7 @@
 This project aims to develop a deep learning model capable of predicting the emotional state (stress/no stress) of an individual based on their ElectroCardiogram (ECG) signals. The model has been trained on the PhysioNet Driver’s Stress Detection dataset.
 
 ## Dataset
-The dataset, obtained from the PhysioNet repository, contains ECG data collected from drivers under stress conditions. The data is sampled at a frequency of 700Hz and includes recordings from multiple subjects. The dataset was challenging to process due to errors and limited data, but optimization techniques were applied to ensure model robustness.
+The dataset, obtained from the PhysioNet repository [[1]](#1), contains ECG data collected from drivers under stress conditions. The data is sampled at a frequency of 700Hz and includes recordings from multiple subjects. The dataset was challenging to process due to errors and limited data, but optimization techniques were applied to ensure model robustness.
 
 ## Data Pre-Processing
 The raw ECG data was preprocessed using:
@@ -60,6 +60,9 @@ Below are the results from specific test samples, showing the predicted stress l
 | 0.1     | 0.2          | 6      | 2        | 1.16 (Relaxed)           |
 | 0.4     | 0.35         | 15     | 5.5      | 3.11 (Medium Stress)     |
 | 0.9     | 0.7          | 30     | 11       | 5.12 (High Stress)       |
+
+## References
+<a id="1">[1]</a> PhysioNet Driver’s Stress Detection Dataset: PhysioNet Dataset</a>.
 
 ## Installation
 ```bash
